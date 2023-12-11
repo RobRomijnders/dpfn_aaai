@@ -1,0 +1,26 @@
+program: dpfn/experiments/compare_abm.py
+command:
+  - /var/scratch/rromijnd/conda/envs/ml38/bin/python3
+  - dpfn/experiments/compare_abm.py
+  - --inference_method=fncpp
+  - --config_data=intermediate_graph_abm_02
+  - --config_model=model_ABM01
+method: grid
+metric:
+  goal: minimize
+  name: pir_mean
+parameters:
+  seed:
+    values: [1, 2, 3, 4, 5, 6, 7, 8]
+  data.num_users:
+    values: [100000]
+  model.dp_method:
+    values: [5]
+  model.num_rounds:
+    values: [5]
+  model.noisy_test:
+    values: [1]
+  model.a_rdp:
+    values: [-42]
+  model.epsilon_dp:
+    values: [1.0]
