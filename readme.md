@@ -3,7 +3,7 @@
 This repo contains accompanying code for the AAAI 2023 paper:
 'Protect Your Score: Contact Tracing with Differential Privacy Guarantees'.
 
-The library is named DPFN, after the decentralized algorithm that we introduce.
+A utility library with faster implementations in C++ is available at [github.com/RobRomijnders/dpfn_cpp](https://github.com/RobRomijnders/dpfn_cpp).
 
 ## Typical usage
 
@@ -144,7 +144,5 @@ $ wandb agent "${WANDBUSERNAME}/dpfn-dpfn_experiments/$SWEEP"
 ## Attribution
 
 The starting point for this repo was a fork of [our earlier project](https://github.com/QUVA-Lab/nttw).
-
-This work is financially supported by Qualcomm Technologies Inc., the University of Amsterdam and the allowance Top consortia for Knowledge and Innovation (TKIs) from the Netherlands Ministry of Economic Affairs and Climate Policy.
 
 All communication may go to romijndersrob@gmail.com or r.romijnders@uva.nl.
