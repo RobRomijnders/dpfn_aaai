@@ -5,6 +5,8 @@ This repo contains accompanying code for the AAAI 2023 paper:
 
 A utility library with faster implementations in C++ is available at [github.com/RobRomijnders/dpfn_cpp](https://github.com/RobRomijnders/dpfn_cpp).
 
+Note: this repo makes use of the Gaussian Mechanism. For eps>1, the [Analytical Gaussian Mechanism](https://arxiv.org/abs/1805.06530) should be used to find the variance of Gaussian noise. This affects only one of the baseline methods, the "per-message" baseline. Our [paper on arxiv](https://arxiv.org/abs/2312.11581) will soon be updated to reflect this.
+
 ## Typical usage
 
 Starting point for experiments will be the following command:
